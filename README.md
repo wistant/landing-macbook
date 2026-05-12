@@ -1,3 +1,5 @@
+<img src="/public/th.png" alt="MacBook Showcase" width="1920" height="870" />
+
 # MacBook Showcase Landing Page - React, Vite, TypeScript, Tailwind CSS, GSAP, Three.js, Zustand Frontend Project
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
