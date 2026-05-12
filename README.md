@@ -64,7 +64,7 @@ A **single-page, client-side** marketing-style experience inspired by Apple prod
 ## Tech stack & why each piece exists
 
 | Technology             | Role here                                                                   |
-| ---------------------- | --------------------------------------------------------------------------- |
+|------------------------|-----------------------------------------------------------------------------|
 | **Vite 7**             | Dev server, HMR, production build, asset pipeline.                          |
 | **React 19**           | UI composition, hooks, concurrent-friendly patterns.                        |
 | **TypeScript**         | Types for props, refs, GLTF results, and store shape.                       |
@@ -191,7 +191,7 @@ export default useMacbookStore;
 ## API, backend & data flow
 
 | Question                         | Answer                                                                                        |
-| -------------------------------- | --------------------------------------------------------------------------------------------- |
+|----------------------------------|-----------------------------------------------------------------------------------------------|
 | **REST / GraphQL API?**          | **None.** All content is static JSON/arrays in `src/constants/index.ts` or hardcoded JSX.     |
 | **Server-side rendering?**       | **No.** First paint is the built SPA; crawlers see `index.html` meta + shell.                 |
 | **Where do videos/models live?** | Under **`public/`**—URLs like `/videos/hero.mp4` resolve at runtime from the deployed origin. |
@@ -238,7 +238,7 @@ npm run dev
 ```
 
 | Script               | What it does                                     |
-| -------------------- | ------------------------------------------------ |
+|----------------------|--------------------------------------------------|
 | `npm run dev`        | Vite dev server with hot reload.                 |
 | `npm run build`      | TypeScript-aware production build to `dist/`.    |
 | `npm run preview`    | Serves the production build locally for testing. |
@@ -261,7 +261,7 @@ npm run preview
 ## Reusing parts in other projects
 
 | Piece                  | How to reuse                                                                                   |
-| ---------------------- | ---------------------------------------------------------------------------------------------- |
+|------------------------|------------------------------------------------------------------------------------------------|
 | **Section components** | Copy a component + matching `@layer` block from `index.css`, or move styles into modules.      |
 | **Zustand store**      | Extract `store/index.ts` into a package or `lib/store` in a monorepo; keep types alongside.    |
 | **R3F canvas**         | Wrap `<Canvas>` in `Suspense`; preload GLBs with `useGLTF.preload` in the same module as use.  |
@@ -307,7 +307,7 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 
 This is an **open-source project** - feel free to use, enhance, and extend this project further!
 
-If you have any questions or want to share your work, reach out via GitHub or my portfolio at [https://www.arnobmahmud.com](https://www.arnobmahmud.com).
+If you have any questions or want to share your work, reach out via GitHub or my portfolio at [https://www.wistant.dev](https://www.wistant.dev).
 
 **Enjoy building and learning!** 🚀
 
